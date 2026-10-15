@@ -1,4 +1,9 @@
-<title>Engineering Portfolio Prototype</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mechanical Engineering Portfolio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Silkscreen&display=swap">
@@ -20,6 +25,9 @@
   --blue:#5B82FF; --orange:#FF7A42; --steel:#8FA1B5; --brass:#C9A35E; --green:#6FA595; color-scheme:dark}
 
 *{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0}
+img{max-width:100%}
 html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
@@ -179,7 +187,8 @@ section.sheet{padding-block:72px 24px}
 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style>
-
+</head>
+<body>
 <canvas id="paint" aria-hidden="true"></canvas>
 
 <div class="wrap">
@@ -479,3 +488,6 @@ if(matchMedia('(pointer: coarse)').matches)document.querySelector('.tools').hidd
 
 route();
 </script>
+
+</body>
+</html>
